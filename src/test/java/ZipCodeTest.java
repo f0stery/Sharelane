@@ -3,8 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class ZipCodeTest {
@@ -47,5 +45,5 @@ public class ZipCodeTest {
         browser.quit();
     }
 
-
+    
 }
