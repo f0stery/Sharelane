@@ -3,8 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class ZipCodeTest {
@@ -36,7 +34,7 @@ public class ZipCodeTest {
         browser.get("https://sharelane.com/cgi-bin/register.py");
 
         //<input type="text" name="zip_code" value="">
-        browser.findElement(By.name("zip_code")).sendKeys("");
+        browser.findElement(By.name("zip_code")).sendKeys("1111");
 
         //<input type="submit" value="Continue">
         browser.findElement(By.cssSelector("[value='Continue']")).click();
@@ -47,5 +45,5 @@ public class ZipCodeTest {
         browser.quit();
     }
 
-
+    
 }
